@@ -38,3 +38,9 @@ At least, add this to your `composer.json`:
     ...
 }
 ```
+
+To run your created tests, run the following command from your project root:
+
+```bash
+vendor/bin/codecept run
+```
