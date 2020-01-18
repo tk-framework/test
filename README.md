@@ -30,7 +30,7 @@ modules:
 
 ```
 
-At least, add this to your `composer.json`:
+Then you can create your tests under `tests/unit`. At least, add this to your `composer.json`:
 
 ```json
 "require-dev": {
