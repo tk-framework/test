@@ -82,14 +82,10 @@ use Codeception\Scenario,
  * @method mixed assertNotEqualsIgnoringCase($expected, $actual, $message = null)
  * @method mixed assertEqualsWithDelta($expected, $actual, $delta, $message = null)
  * @method mixed assertNotEqualsWithDelta($expected, $actual, $delta, $message = null)
+ * @method Scenario getScenario()
  */
 trait UnitTesterActions
 {
-	/**
-	 * @return Scenario
-	 */
-	abstract protected function getScenario();
-
 	/**
 	 * @param string $method
 	 * @param array $arguments
