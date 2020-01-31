@@ -94,6 +94,7 @@ trait UnitTesterActions
 	 * @param string $method
 	 * @param array $arguments
 	 * @return mixed
+	 * @throws \Exception
 	 */
 	public function __call($method, $arguments)
 	{
