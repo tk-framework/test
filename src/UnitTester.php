@@ -7,14 +7,12 @@ declare(strict_types = 1);
 
 namespace TimonKreis\Framework\Test;
 
-use Codeception\Actor,
-	Codeception\Scenario;
+use Codeception\Actor;
 
 /**
  * @category tk-framework
  * @package test
  *
- * @method Scenario getScenario()
  * @method void wantToTest($text)
  * @method void wantTo($text)
  * @method void execute($callable)
