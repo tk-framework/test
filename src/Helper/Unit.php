@@ -7,11 +7,13 @@ declare(strict_types = 1);
 
 namespace TimonKreis\Framework\Test\Helper;
 
+use Codeception\Module;
+
 /**
  * @category tk-framework
  * @package test
  */
-class Unit extends \Codeception\Module
+class Unit extends Module
 {
 
 }
