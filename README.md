@@ -18,7 +18,7 @@ extensions:
   - Codeception\Extension\RunFailed
 ```
 
-`tests/unit.suite.yml`:
+`tests/unit.suite.yml` (if unit tests should be created):
 
 ```yaml
 actor: UnitTester
@@ -30,7 +30,29 @@ modules:
 
 ```
 
-Then you can create your tests under `tests/unit`. At least, add this to your `composer.json`:
+`tests/functional.suite.yml` (if functional tests should be created):
+
+```yaml
+actor: FunctionalTester
+modules:
+  enabled:
+  - TimonKreis\Framework\Test\Helper\Functional
+  step_decorators: ~
+```
+
+`tests/acceptance.suite.yml` (if acceptance tests should be created):
+
+```yaml
+actor: AcceptanceTester
+modules:
+  enabled:
+  - PhpBrowser:
+    url: http://localhost/mypackage
+  - TimonKreis\Framework\Test\Helper\Acceptance
+  step_decorators: ~  
+```
+
+Then you can create your tests under `tests/unit`, `tests/functional` or `tests/acceptance`. At least, add this to your `composer.json`:
 
 ```json
 "require-dev": {
