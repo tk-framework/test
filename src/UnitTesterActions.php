@@ -16,6 +16,7 @@ use Codeception\Scenario,
  *
  * @method mixed expectException($exception, $callback)
  * @method mixed expectThrowable($throwable, $callback)
+ * @method mixed assertEquals($expected, $actual, $message = null)
  * @method mixed assertNotEquals($expected, $actual, $message = null, $delta = null)
  * @method mixed assertSame($expected, $actual, $message = null)
  * @method mixed assertNotSame($expected, $actual, $message = null)
@@ -75,7 +76,6 @@ use Codeception\Scenario,
  * @method mixed assertIsNotString($actual, $message = null)
  * @method mixed assertIsNotScalar($actual, $message = null)
  * @method mixed assertIsNotCallable($actual, $message = null)
- * @method mixed assertEquals($actual, $message = null)
  * @method mixed assertEqualsCanonicalizing($expected, $actual, $message = null)
  * @method mixed assertNotEqualsCanonicalizing($expected, $actual, $message = null)
  * @method mixed assertEqualsIgnoringCase($expected, $actual, $message = null)
