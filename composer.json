@@ -3,7 +3,7 @@
 	"description": "Provides support for testing to avoid duplicate code.",
 	"homepage": "https://www.timonkreis.de",
 	"readme": "README.md",
-	"license": "proprietary",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Timon Kreis",
